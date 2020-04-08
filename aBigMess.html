@@ -8,18 +8,18 @@
 </head>
 <body>
 
-    <div>Random Placement</div>
-    <div>Random Placement</div>
-    <div>Random Placement</div>
-    <div>Random Placement</div>
-    <div>Random Placement</div>
-    <div>Random Placement</div>
-    <div>Random Placement</div>
-    <div>Random Placement</div>
-    <div>Random Placement</div>
-    <div>Random Placement</div>
-    <div>Random Placement</div>
-    <div>Random Placement</div>
+    <div>1. Random Placement</div>
+    <div>2. Random Placement</div>
+    <div>3. Random Placement</div>
+    <div>4. Random Placement</div>
+    <div>5. Random Placement</div>
+    <div>6. Random Placement</div>
+    <div>7. Random Placement</div>
+    <div>8. Random Placement</div>
+    <div>9. Random Placement</div>
+    <div>10. Random Placement</div>
+    <div>11. Random Placement</div>
+    <div>12. Random Placement</div>
 
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -27,7 +27,15 @@
   crossorigin="anonymous"></script>
 
   <script>
-    $('body *').each()
+
+    $('body *').each(function(e){
+
+        let random = (Math.random()*500) + "px"
+
+         console.log(random)
+
+        $(this).css('position', 'absolute').css('top', random).css('left', random)
+    })
     </script>
 
 </body>
