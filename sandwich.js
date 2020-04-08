@@ -1,12 +1,15 @@
 function sandwichCalc(slicesOfBread, slicesOfCheese) {
    
     var sandwiches = Math.floor(slicesOfBread / 2)
-    
-    if 
 
-    console.log(sandwiches)
+    if (sandwiches < slicesOfCheese && sandwiches > 0) {
+        return sandwiches
+    } else if (sandwiches > slicesOfCheese && slicesOfCheese > 0)  {
+        return slicesOfCheese
+    } else {
+        return 'Sorry! You dont have enough to make sandwiches.'
+    }
 
-    return sandwiches
 }
 
-sandwichCalc(11);
+console.log(sandwichCalc(20, 1));
