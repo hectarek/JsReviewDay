@@ -26,16 +26,22 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
 
+
   <script>
 
-    function rand() {
-        return Math.random()*1000
-    }
-    $('body *').each(function(e){
-        $(this).css('position', 'absolute')
-        .css('top', rand())
-        .css('left', rand());
+    console.log($('body *'));
+
+    $('body *').each(function(){
+        
+        $(this).css({
+            'position': 'absolute',
+            'top': Math.random() * 500,
+            'left': Math.random() * 500
+        })
+        
     })
+
+
     </script>
 
 </body>

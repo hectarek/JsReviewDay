@@ -20,29 +20,28 @@ if (userInput == "Alice" || userInput == "Bob") {
 // numbers 1 to n
 var userInput4 = prompt("Hey, pick a number and I will print one to that number")
 
-var array4 = [];
+var sum = 0
 
 for (let i=1; i <= userInput4; i++){
-    
-    array4.push(i)
+   sum += i;
 }
 
-console.log(array4.join(','))
+console.log(sum)
 
 // 5. Modify the previous program such that only multiples of three or five are
 // considered in the sum, e.g. 3, 5, 6, 9, 10, 12, 15 for n=17
 var userInput5 = prompt("Hey, pick a number and I will print one to that number")
 
-var array5 = [];
+var sum = 0;
 
 for (let i=1; i <= userInput5; i++){
     
     if(i % 3 == 0 || i % 5 == 0){
-        array5.push(i)
+        sum += i;
     }
 }
 
-console.log(array5.join(','))
+console.log(sum)
 
 // 6. Write a program that asks the user for a number n and gives them the possibility
 // to choose between computing the sum and computing the product of 1,…,n.
@@ -70,8 +69,6 @@ for (let i=1; i <= 12; i++){
     console.log ('Mulitples of ', i, ": ", numLine)
 }
 
-
-
 // 8. Write a program that prints all prime numbers. (Note: if your programming
 // language does not support arbitrary size numbers, printing all primes up to the
 // largest number you can easily represent is fine too.)
@@ -97,7 +94,6 @@ function isPrime(n) {
     return true;  
   }
 }
-
 
 for (let i=0; i < 10000; i++) {
     if (isPrime(i)){
@@ -182,10 +178,10 @@ for (let i=0; i < array13.length; i++){
         result = ('Yes ' + userInput13 + ' is in there.')
         break;
     }
+    
 }
 
 alert(result);
-
 
 
 // 14.Write a function that returns the elements on odd positions in a list.
@@ -258,8 +254,6 @@ while (c < array17.length){
 console.log(sum2);
 
 var sum3 = 0;
-
-
 
 
 // 18.Write a function on_all that applies a function to every element of a list. Use it to
