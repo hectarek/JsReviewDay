@@ -2,7 +2,7 @@ function sandwichCalc(slicesOfBread, slicesOfCheese) {
    
     var sandwiches = Math.floor(slicesOfBread / 2)
 
-    if (sandwiches < slicesOfCheese && sandwiches > 0) {
+    if (sandwiches <= slicesOfCheese && sandwiches > 0) {
         return sandwiches
     } else if (sandwiches > slicesOfCheese && slicesOfCheese > 0)  {
         return slicesOfCheese
@@ -12,4 +12,6 @@ function sandwichCalc(slicesOfBread, slicesOfCheese) {
 
 }
 
-console.log(sandwichCalc(20, 1));
+console.log(sandwichCalc(20, 3));
+
+
